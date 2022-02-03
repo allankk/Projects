@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .body {
+  text-align: center;
+}
+
+.body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #384358;
+  text-align: center;
+}
+
+h2 {
+  color: #dcdcdc;
+}
+
+.game {
+  margin-top: 200px;
+  position: relative;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.game .ship-container {
+  position: absolute;
+  bottom: 155px;
+}
+
+/* BEFORE GAME START */
+
+.Prompt {
+  position: absolute;
+  top: -60px;
+}
+
+.startBtn {
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    box-shadow: 0 0 8px -3px #171717;
+}
+
+.startBtn:hover {
+  cursor: pointer;
+}
+
+.resetDiv {
+  margin: 20px;
+}
+
+.resetBtn {
+  height: 40px;
+  width: 150px;
+}
+
+/* MESSAGES */
+
+.message {
+  color: #dcdcdc;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.end-message {
+  position: absolute;
+  top: -120px;
+  color: #dcdcdc;
+  font-size: 20px;
+}
+
+.end-message button {
+  height: 40px;
+  width: 150px;
+}
+
+.end-message button:hover {
+  cursor: pointer;
+}
+
+/* BOARD */
+
+.board-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.board-header {
+  margin: 0 10px;
+}
+
+.board {
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 8px -3px black;
+} 
+
+.board.disabled .tile {
+  background-color: #5585b566;
+  pointer-events: none;
+}
+
+.board.disabled .tile:hover {
+  background-color: #5585b566;
+}
+
+.board .grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.board .tile {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #354861;
+    background-color: #5585b5;
+}
+
+.board .tile:hover {
+  background-color: #72c7ffc9;
+  cursor: pointer;
+}
+
+.board .tile.hit {
+  pointer-events: none;
+  background-color: #b57055;
+}
+
+.board .tile.sunk {
+  pointer-events: none;
+  background-color: #e44100;
+}
+
+.board .tile.attacked {
+  pointer-events: none;
+  line-height: 1.6em;
+}
+
+.board .tile.ship {
+  background-color: #548654;
+}
+
+/* SHIP CONTAINER */
+
+.ship-container {
+  background-color: #5585b54d;
+  width: 600px;
+  height: 170px;
+  display: flex;
+}
+
+.ship-container .ship {
+  margin: 5px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.ship-container .ship:hover > .tile.ship {
+  background-color: #4cb71bc2;;
+}
+
+.ship-container .tile.ship {
+  background-color: #548654;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  border: 1px solid #282c34;
+  color: #000000ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.ship-container .tile.ship:hover {
+  cursor: pointer;
+}
+
+.ship-container .tile.ship.rotate {
+  font-size: 12px;
+}
+
+
+/* ship array to display hits */
+
+.shiparray {
+  display: flex;
+  flex-direction: column;
+  color: #dcdcdc;
+  height: 240px;
+  width: 80px;
+}
+
+.shiparray .ship {
+  display: flex;
+  flex-direction: row;
+}
+
+.shiparray .circle {
+  border: 1px solid #dcdcdc;
+  width: 10px;
+  height: 10px;
+  margin: 10px 2px;
+  border-radius: 10px;
+}
+
+.shiparray .circle.filled {
+  background-color: #dcdcdc;
+}
