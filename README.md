@@ -25,7 +25,7 @@ The following projects can be found on the website [allank.ee](http://allank.ee)
 
 - [CS50 - Harvard introduction course to Programming](https://cs50.harvard.edu/x/2019/)
     - C, Python, HTML/CSS 
-    - Completed all except presentation of the final project in 2018, unfortunately no data remaining
+    - Completed all except presentation of the final project in 2018, unfortunately submissions at that time were made into their own system (and not GitHub) and are not available anymore.
 
 - [TheOdinProject - Full Stack Javascript](https://www.theodinproject.com/paths/full-stack-javascript?)
     - HTML/CSS, JavaScript, React, Node
