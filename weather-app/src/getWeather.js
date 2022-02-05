@@ -4,7 +4,9 @@ import { removeErrors } from './navigation.js';
 import { getWeatherType, getWindDirection } from './weatherItem.js';
 
 const URLSTART = 'https://api.openweathermap.org/data/2.5/weather?q=';
-const URLEND = '&appid=ccc5bdcd6b167bc37faefb623abeb33b';
+
+// UNCOMMENT THE NEXT LINE AND ADD YOUR API KEY
+//const URLEND = '&appid=*APIKEY HERE*';
 
 
 // get weather information from openweathermap api, then use that information in logResponse()
