@@ -37,4 +37,8 @@ The following projects can be found on the website [allank.ee](http://allank.ee)
     - Done things here and there between 2018-2021
     - Pretty basic course in general, but can forward the relevant certifications if needed.
 
+- [MOOC.fi](https://java-programming.mooc.fi/)
+    - Java
+    - Basics of OOP
+
 - A few university courses in around 2016 (Introduction to Programming in Tartu University) and relating more loosely to IT in 2018 (Control Engineering in TalTech and Geoinformatics in Budapest University of Technology and Economics)
